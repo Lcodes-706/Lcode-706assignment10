@@ -1,0 +1,112 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "sidebar content1 content1"
+        "sidebar content2 content3"
+        "footer footer footer";
+    grid-gap: 10px;
+    background-color: #2c3e50;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    grid-area: header;
+    background: linear-gradient(to right, #8e44ad, #9b59b6);
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    background: linear-gradient(to bottom, #1abc9c, #16a085);
+    padding: 20px;
+    text-align: center;
+}
+
+#content1 {
+    grid-area: content1;
+    background: linear-gradient(to right, #3498db, #2980b9);
+    padding: 20px;
+    text-align: center;
+}
+
+#content2 {
+    grid-area: content2;
+    background: linear-gradient(to right, #8e44ad, #9b59b6);
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold; 
+}
+
+#Shoes {
+    grid-area: content3;
+    background: linear-gradient(to right, #3498db, #2980b9);
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    background: linear-gradient(to right, #8e44ad, #9b59b6);
+    padding: 20px;
+    text-align: center;
+}
+
+#sidebar h2,
+#content1 h2,
+#content2 h2,
+#Shoes h2,
+header h1 {
+    font-size: 32px;
+}
+
+/* Applying two filter effects to elements in #content2 */
+#content2 .box {
+    filter: brightness(120%) contrast(150%); 
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+}
+
+/* Applying two transform effects to elements in #content2 */
+#content2 .box:nth-child(1) {
+    transform: skew(10deg) translateX(20px); 
+}
+
+/* Applying one animation to an element in #content2 */
+#content2 img {
+    width: 100px;
+    height: auto;
+    animation: bounce 2s infinite; /* Animation applied */
+}
+
+#content1 .box:nth-child(1) {
+    filter: blur(2px) grayscale(50%);
+}
+
+#content1 .box:nth-child(2) {
+    transform: rotate(20deg) scale(1.2);
+}
+
+#content1 img {
+    width: 100px;
+    height: auto;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+#Shoes img {
+    width: 75px;
+    height: auto;
+}
+
+/* Animation keyframes */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+}

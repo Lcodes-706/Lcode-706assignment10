@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Project</title>
+    <!--
+    Created by:Lindsay Long
+    Date Created: 07/05/2025
+    Description: This is my lesson 5 interactive website. I followed the instructions and created a functional webpage that included the correct html, css, and javascript.
+    
+    -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <h1>JavaScript Interactivity</h1>
+    <main>
+        <p id="first-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quo, iusto numquam fugit ea, debitis illum vitae quaerat earum praesentium similique? Quasi nobis voluptas cumque ducimus sed magni officiis vel.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur veniam repellendus saepe, praesentium rem voluptatum pariatur tempora adipisci nostrum laudantium expedita eius iste voluptas debitis eligendi nihil dolore, iure minima minus quidem id corrupti quaerat totam. Ipsum voluptatibus modi reiciendis possimus voluptatem ab placeat libero molestiae neque! Ut, nulla officia.</p>
+        <p id="greeting">Hello, world!</p>
+
+        <label for="bg-color">Select Background Color:</label>
+        <select id="bg-color" aria-describedby="bg-color-desc">
+            <option value="lightblue">Light Blue</option>
+            <option value="lightgreen">Light Green</option>
+            <option value="lightcoral">Light Coral</option>
+            <option value="lightyellow">Light Yellow</option>
+        </select>
+        <p id="bg-color-desc" class="sr-only">Choose a background color for the page from four options.</p>
+
+        <label for="greeting-input">New Greeting:</label>
+        <input type="text" id="greeting-input" aria-describedby="greeting-input-desc" placeholder="Enter new greeting">
+        <p id="greeting-input-desc" class="sr-only">Enter text to replace the current greeting.</p>
+
+        <label for="paragraph-input">New First Paragraph:</label>
+        <input type="text" id="paragraph-input" aria-describedby="paragraph-input-desc" placeholder="Enter new paragraph text">
+        <p id="paragraph-input-desc" class="sr-only">Enter text to replace the first paragraph.</p>
+
+        <button id="apply-changes">Apply Changes</button>
+    </main>
+    <script src="styles/scripts/javascripts.js"></script>
+</body>
+</html>

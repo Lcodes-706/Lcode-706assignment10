@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0"> 
+    <title>Le Petit Bistro</title>
+    <!-- 
+    Created by: Linday Long
+    Date Created: 07/15/2025
+    Description: This is my version of the Lesson 7 incividual asssignment. I titled my cafe to be "Le Petit Bistro", and followed the instructions of the assignment to the best of my ability.
+    -->
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Le Petit Bistro</h1>
+    </header>
+
+<section class="intro">
+    <img src="./images/lepetit.jpg" style="height: 500px;" alt="Le Petit Bistro" class="center">
+</section>
+
+    <section style="display: flex; justify-content: center; align-items: center;">
+    <h2>Welcome to Le Petit Bistro!</h2>
+</section>
+        <p>Step into Le Petit Bistro, an authentic Italian gem where every dish tells a story of tradition, passion, and the finest ingredients. From classic pasta dishes to mouthwatering risottos, our culinary team meticulously craftsneach plate to transport tastebuds straight to the heart of Italy. Join us for an unforgettable dining experience and be sure to check out our weekly specials below!
+        </p>
+    </section>
+    
+    <!-- Desktop View -->
+    <div class="gallery desktop-only">
+        <div class="menu-item" onclick="openModal('item1','Grilled Salmon', 'Freshly caught salmon, grilled to perfection with a lemon herb sauce, served with seasonal vegetables.')">
+        <img src="./images/salmon.jpg" alt="Grilled Salmon"
+        </div>
+        <div class="menu-item" onclick="openModal('item2', 'Margherita Pizza','Classic Italian pizza with fresh tomatoes, mozzarella, basil, an a drizzle of olive oil.')">
+            <img src="./images/pizza.jpg" alt="Margherita Pizza">
+        </div>
+        <div class="menu-item" onclick="openModal('item3', 'Caesar Salad','Crisp romaine lettuce tossed with our signature Caesar dressing, crutons, and parmesan cheese.')">
+            <img src="./images/Salad.jpg" alt="Caesar Salad">
+        </div>
+    </div>
+
+    <!-- Tablet View -->
+
+    <section style="text-align: center; padding: 20px;">
+</section>
+    <div class="tablet-view tablet-only">
+    <h3 style="font-size: 1.5em; margin: 20px 0;">Menu Specials</h3>
+        <div class="tablet-item">
+            <img src="./images/salmon.jpg"
+            style="height: 300px;"
+            alt="Grilled Salmon" > 
+            <p>Grilled Salmon: Freshly caught salmon, grilled to perfection with a lemon herb sauce, served with seasonal vegetables.</p>
+        </div>
+        <div class="tablet-item">
+            <img src="./images/pizza.jpg" 
+            style="height: 300px;"
+            alt="Margherita Pizza">
+            <p>Margherita Pizza: Classic Italian pizza with fresh tomatoes, mozzarella, basil, and a drizzle of olive oil.</p>
+        </div>
+        <div class="tablet-item">
+            <img src="./images/Salad.jpg" style="height: 300px;"
+            alt="Caesar Salad">
+            <p>Caesar Salad: Crisp romaine lettuce tossed with our signature Caesar dressing, croutons, and parmesan cheese.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Mobile View -->
+    <div class="mobile-view mobile only">
+        <p>Directions: From downtown, head north on Main St. for 2 miles, turn left onto Culinary Ave. We're on the right!</p>
+        <img src="./images/map.jpg"style="height: 300px;" alt="Map to Le Petit Bistro">
+    </div>
+
+    <!-- Modal for Desktop Image Click -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <img id="modal-image" src="" alt="Menu Item"
+            id="modal-text"></p> <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <footer class="desktop-only tablet-only">
+        <p class="address desktop-only">123 Culinary Ave, Dessert Town, USA</p>
+        <p class="location-info desktop-only">Nestled in the heart of Dessert Town, our bistro offers a warm, inviting atmosphere with a focus on fresh, local ingredients.</p>
+        <p>Contact: (555) 123-4567 | info@lepetit.com</p>
+    </footer>
+
+    <script src="./styles/script.js"></script> 
+    <style></style>
+</body>
+</html>

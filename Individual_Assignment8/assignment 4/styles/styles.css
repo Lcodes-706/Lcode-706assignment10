@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav a.active {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.featured-albums {
+    margin-bottom: 3rem;
+}
+
+.album-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.album {
+    flex: 1 1 150px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.album img {
+    max-width: 75%;
+    height: auto;
+}
+
+.album:hover {
+    transform: translateY(0.5rem) scale(1.1);
+}
+
+.inventory {
+    margin-top: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.store-info {
+    position: relative;
+}
+
+.store-image {
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+.special-note {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #ffe6e6;
+    padding: 1rem;
+    border: 1px solid #ff9999;
+    width: 200px;
+}
+
+.store-content {
+    position: relative;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .album-container {
+        justify-content: center;
+    }
+    
+    .store-image {
+        float: none;
+        margin: 2 auto 1rem;
+        display: block;
+    }
+    
+    .special-note {
+        position: static;
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    table {
+        font-size: 0.9rem;
+    }
+}
